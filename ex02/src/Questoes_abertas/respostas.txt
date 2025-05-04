@@ -1,0 +1,25 @@
+1) Usar getters e setters é recomendado pelo fato de deixar o nosso código mais escalável tanto em questão de manutenção, quanto em organização. Assim também permitindo que os nossos atributos não sejam modificados diretamente. 
+
+Ex: Imagine que quer armazenar apenas números pares em um atributo "pares", para um número ser par ele tem que ser divisivel por 2, usando o setter podemos estabelecer uma regra antes de armazenar o conteúdo no nosso atributo
+
+public void setPar(int numPar){
+  if(numPar % 2 == 0){
+     this.pares = numPar;
+  }
+}
+
+A cima só armazenamso se o número condiz com a regra implementada.
+
+2) 
+
+    a) Título do livro, descrição, autor, se estar disponível para aluguel e a quantidade em estoque desse livro.
+
+    b) Pois a classe é apenas o essencial dos dados para definir o livro
+
+    c) abrir, alugar, devolver
+
+    abrir => Método para ter acesso as informações do livro
+
+    alugar => Método que atribui o livro em "alugado"
+
+    devolver => Método que atribui o livro em "em estoque" novamente
